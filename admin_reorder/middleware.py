@@ -11,7 +11,7 @@ from django.utils.six import string_types
 
 try:
     from django.urls import resolve, Resolver404
-except ModuleNotFoundError:
+except ImportError:
     # Deprecated since Django 1.10, removed in Django 2.0
     from django.core.urlresolvers import resolve, Resolver404
 
