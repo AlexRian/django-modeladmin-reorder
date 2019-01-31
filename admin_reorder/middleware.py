@@ -13,7 +13,7 @@ try:
     from django.urls import resolve, Resolver404
 except ModuleNotFoundError:
     # Deprecated since Django 1.10, removed in Django 2.0
-    from django.urls.urlresolvers import resolve, Resolver404
+    from django.core.urlresolvers import resolve, Resolver404
 
 try:
     from django.utils.deprecation import MiddlewareMixin
